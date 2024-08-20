@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+padding: 0px;
+margin: 0px;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+}
+
+
+header {
+position: sticky;
+top: 0px;
+z-index: 1000;
+}
+
+.nav {
+width: 100vw;
+height: 10vh;
+margin: auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: rgb(212, 170, 128);
+}
+
+nav {
+width: 50%;
+display: flex;
+justify-content: space-between;
+
+}
+
+nav a {
+text-decoration: none;
+color: black;
+font-weight: 700;
+font-size: medium;
+padding: 5px 10px;
+border-radius: 15px;
+background-color: rgba(8, 94, 33, 0.471);
+}
+nav a:hover{
+background-color: rgba(12, 139, 54, 0.295) ;
+}
+
+.namelogo {
+font-size: x-large;
+font-weight: bold;
+font-family: cursive;
+
+}
+
+
+
+
+
+.logo {
+position: fixed;
+right: 40px;
+bottom: 40px;
+padding: 10px;
+background-color: rgba(54, 5, 127, 0.345);
+border-radius: 50px;
+
+}
+
+.about {
+width: 70vw;
+margin: auto;
+}
+
+#home {
+width: 80vw;
+min-height: 90vh;
+margin: auto;
+margin-top: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+padding: 10px;
+
+
+}
+
+.h1 {
+color: rgb(207, 115, 10);
+font-size: 50px;
+font-weight: bolder;
+
+}
+
+#home p {
+font-size: 30px;
+}
+
+
+
+.side1 {
+width: 50%;
+}
+
+.justify {
+text-align: justify;
+
+}
+
+.side2 {
+width: 50%;
+
+display: flex;
+justify-content: center;
+
+align-items: center;
+
+}
+
+.side2 img {
+max-width: 80%;
+
+max-height: 100%;
+
+object-fit: contain;
+filter: drop-shadow(0px 0px 16px black);
+
+
+
+}
+
+.seperator {
+height: 4px;
+background-color: rgba(138, 172, 15, 0.471);
+width: 90vw;
+margin: auto;
+}
+
+#about {
+width: 80vw;
+min-height: 100vh;
+margin: auto;
+margin-top: 50px;
+text-align: justify;
+padding-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.me {
+width: 50%;
+}
+
+.education {
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+color: white;
+font: bold;
+
+
+}
+.school:hover{
+background-color: rgba(6, 44, 141, 0.295);
+}
+.inter:hover{
+background-color:rgba(56, 21, 108, 0.295) ;
+}
+.college:hover{
+background-color:rgba(32, 5, 84, 0.295) ;
+}
+
+.heading {
+color: black;
+font-size: xx-large;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.education div {
+padding: 10px;
+text-align: center;
+background-color: rgba(162, 127, 57, 0.471);
+}
+#project{
+padding: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#projects {
+
+width: 70vw;
+margin: auto;
+margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+text-align: justify;
+
+}
+.project1{
+
+background-color: rgba(147, 64, 5, 0.471);
+padding: 50px;
+border-radius: 10px;
+width: 50%;
+display: flex;
+flex-direction: column;
+
+}
+
+.project2{
+
+background-color: rgba(7, 172, 120, 0.471);
+padding: 50px;
+border-radius: 10px;
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.contact{
+height: 100vh;
+}
+.contact-form{
+height: 50vh;
+width: 50vw;
+margin: 100px auto 100px auto;
+
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 9px;
+background-color: rgba(197, 174, 174, 0.471);
+
+}
+#name{
+border-radius: 5px;
+border: none;
+padding: 5px;
+}
+#email{
+border-radius: 5px;
+border: none;
+padding: 5px;
+}
+#message{
+border-radius: 5px;
+border: none;
+padding: 5px;
+}
+button{
+border-radius: 5px;
+border: none;
+padding: 5px 10px;
+text-align: center;
+}
+.project1:hover{
+background-color: rgba(8, 8, 8, 0.295);
+}
+.project2:hover{
+background-color: rgba(16, 15, 15, 0.295);
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="nav">
+<div class="namelogo typing-animation">
+SARATH SAI
+</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#project">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<div class="logo">
+CV
+</div>
+<section id="home">
+<div class="side1">
+<h1 class="h1 "> Hi, Myself Sarath Sai.</h1>
+<p>Programmer & web Developer</p>
+<div class="justify">"I am a final year Computer Science Engineering student with a strong foundation in
+problem-solving,
+Python programming, and web development. Throughout my academic journey, I have honed my skills in these
+areas by working on various projects and challenges. My passion for technology drives me to continually
+learn and apply my knowledge to real-world scenarios. I am committed to building efficient and
+innovative solutions, and I am eager to contribute my expertise to the field of software development."
+</div>
+
+</div>
+<div class="side2">
+<img src="image1.png" alt="" srcset="">
+</div>
+
+
+
+
+</section>
+<div class="seperator">
+
+</div>
+<section id="about">
+<div class="me">
+I am a skilled programmer and web developer with a deep passion for creating intuitive and impactful digital
+solutions. With a strong foundation in Python programming, SQL, and web development, I excel at transforming
+complex problems into user-friendly, efficient applications. My expertise spans across a variety of
+technologies, including front-end frameworks like React and back-end systems such as Spring, SpringBoot, and
+Django.
+
+In addition to my technical skills, I possess a keen understanding of user experience (UX) principles,
+ensuring that the solutions I build are not only functional but also engaging and accessible. I have a
+talent for working with data, presenting intricate information in a way that is clear and easily understood
+by diverse audiences.
+
+My work is driven by a relentless curiosity and a commitment to continuous learning, always striving to
+innovate and push the boundaries of what’s possible in software development. I am dedicated to delivering
+high-quality, scalable solutions that meet the unique needs of each project.
+</div>
+<div class="education">
+<h2 class="heading">Education</h2>
+<div class="school">
+<h3>Senior Secondary Education
+</h3>
+<h4>SRI VEVAKANANDHA CENTRAL SCHOOL</h4>
+<h5>Marks:354/500</h5>
+</div>
+<div class="inter">
+<h3> Higher Secondary Education
+</h3>
+<h4>SRI VISWASANTHI SECONDARY SCHOOL</h4>
+<h5>Marks:443/500</h5>
+</div>
+<div class="college">
+<h3>Bachelor of technology/CSE
+</h3>
+<h4>VIGNAN UNIVERSITY</h4>
+<h5>CGPA:6.68</h5>
+</div>
+</div>
+</section>
+<div class="seperator">
+
+</div>
+
+
+<section id="project">
+<h1>MY Latest projects</h1>
+<section id="projects">
+<div class="project1">
+<img src="img2.png" alt="" srcset="">
+<h2>Prediction of weather forecasting</h2>
+Weather forecasting using machine learning involves analyzing historical weather data to predict future
+conditions. By training models on large datasets, ML algorithms can identify patterns and trends,
+improving the accuracy of short-term and long-term forecasts. This approach enhances traditional methods
+by incorporating complex, real-time data analysis.
+</div>
+</section>
+
+
+</section>
+<div class="seperator">
+
+</div>
+<section id="contact">
+
+<div class="contact-form">
+
+<form action="/submit-form" method="post">
+<h1>Contact Me</h1>
+<div>
+<label for="name">Name :</label>
+<input type="text" id="name" name="name" required>
+</div>
+<br>
+<div>
+<label for="email">Email : </label>
+<input type="email" id="email" name="email" required>
+</div>
+<br>
+<div>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+
+</div>
+<br>
+<div>
+<button type="submit">Submit</button>
+</div>
+
+
+
+
+
+
+</form>
+</div>
+
+</section>
+<div class="seperator">
+
+</div>
+
+
+
+</body>
+</html>
